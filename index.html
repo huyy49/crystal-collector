@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Guess Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="jumbotron card">
+    <div class="card-body">
+      <h1 class="text-center card-title">Crystal Collector!</h1>
+      <div class="text-center row">
+        <div class="text-left col-4" id="targetText">
+        </div>
+        <div class="text-left col-2">
+          <div class="card-text" id="winText"></div>
+          <div class="card-text" id="lossText"></div>
+        </div>
+      </div>
+
+      <div class="row card-text">
+        <div class="col-3">
+          <img id="ruby" class="gem img" width="200" height="200" src="assets/images/ruby.png" alt="ruby">
+        </div>
+        <div class="col-3">
+          <img id="emerald" class="gem img" width="200" height="200" src="assets/images/emerald.png" alt="emerald">
+        </div>
+        <div class="col-3">
+          <img id="diamond" class="gem img" width="200" height="200" src="assets/images/DIAMOND.png" alt="DIAMOND">
+        </div>
+        <div class="col-3">
+          <img id="sapphire" class="gem img" width="200" height="200" src="assets/images/Blue-Sapphire.png" alt="Sapphire">
+        </div>
+      </div>
+
+      <div class="row card-text">
+        <div class="col-4">
+          <div id="totalText"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
