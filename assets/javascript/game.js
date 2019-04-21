@@ -20,50 +20,50 @@ $(document).ready(function() {
     diamondNumber = Math.floor(Math.random() * 12) + 1;
     sapphireNumber = Math.floor(Math.random() * 12) + 1;
     totalNumber =  0;
-    $("#targetText").html("<h3>" + targetNumber + "</h3>");
+    $("#targetText").html("<h4>Number to match:" + targetNumber + "</h4>");
   }
 
   // function click() {
     $("#ruby").on("click", function() {
       totalNumber = totalNumber + rubyNumber;
       // console.log("Ruby: " + rubyNumber);
-      console.log("Total: " + totalNumber);
+      // console.log("Total: " + totalNumber);
     });
 
     $("#emerald").on("click", function() {
       totalNumber = totalNumber + emeraldNumber;
       // console.log("Emerald: " + emeraldNumber);
-      console.log("Total: " + totalNumber);
+      // console.log("Total: " + totalNumber);
     });
 
     $("#diamond").on("click", function() {
       totalNumber = totalNumber + diamondNumber;
       // console.log("Diamond: " + diamondNumber);
-      console.log("Total: " + totalNumber);
+      // console.log("Total: " + totalNumber);
     });
 
     $("#sapphire").on("click", function() {
       totalNumber = totalNumber + sapphireNumber;
       // console.log("Sapphire: " + sapphireNumber);
-      console.log("Total: " + totalNumber);
+      // console.log("Total: " + totalNumber);
     });
   // }
 
   $(".gem").on("click", function() {
     if (totalNumber > targetNumber) {
       lossNumber++;
-      $("#lossText").html("<h4>" + "Loss: " + lossNumber + "</h4>");
+      $("#lossText").html("<h4>Loss: " + lossNumber + "</h4>");
       reset();
     } else if (totalNumber == targetNumber) {
       winNumber++;
-      $("#winText").html("<h4>" + "Win: " + winNumber + "</h4>");
+      $("#winText").html("<h4>Win: " + winNumber + "</h4>");
       reset();
     }
-    $("#totalText").html("<h4>" + "Total: " + totalNumber + "</h4>");
+    $("#totalText").html("<h4>Your Number: " + totalNumber + "</h4>");
   });
 
-  $("#targetText").html("<h3>" + targetNumber + "</h3>");
-  $("#winText").html("<h4>" + "Win: " + winNumber + "</h4>");
-  $("#lossText").html("<h4>" + "Loss: " + lossNumber + "</h4>");
-  $("#totalText").html("<h4>" + "Total: " + totalNumber + "</h4>");
+  $("#targetText").html("<h4>Number to match: " + targetNumber + "</h4>");
+  $("#winText").html("<h4>Win: " + winNumber + "</h4>");
+  $("#lossText").html("<h4>Loss: " + lossNumber + "</h4>");
+  $("#totalText").html("<h4>Your number: " + totalNumber + "</h4>");
 });
